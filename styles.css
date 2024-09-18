@@ -1,0 +1,119 @@
+:root {
+    --cor-primaria: #0A74DA;
+    --cor-secundaria: #f0f0f0;
+    --cor-texto: #333;
+    --cor-branca: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--cor-texto);
+    background-color: var(--cor-secundaria);
+}
+
+.header {
+    background-color: var(--cor-primaria);
+    padding: 1em;
+    text-align: center;
+    color: var(--cor-branca);
+}
+
+.header__titulo {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.nav__lista {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__lista li {
+    margin: 0 1em;
+}
+
+.nav__lista a {
+    color: var(--cor-branca);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: var(--cor-primaria);
+    padding: 2em;
+    align-items: center;
+    color: var(--cor-branca);
+}
+
+.banner__texto h2 {
+    font-size: 2.5em;
+}
+
+.banner__botao {
+    background-color: var(--cor-branca);
+    color: var(--cor-primaria);
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+.banner__imagem {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.produtos {
+    padding: 2em;
+    text-align: center;
+}
+
+.produtos__titulo {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.produtos__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+.produto {
+    background-color: var(--cor-branca);
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.produto__imagem {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.produto__nome {
+    margin: 0.5em 0;
+    font-size: 1.25em;
+}
+
+.produto__descricao {
+    color: #666;
+}
+
+.rodape {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
